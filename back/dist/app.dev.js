@@ -10,14 +10,13 @@ var cookieParser = require('cookie-parser');
 
 var logger = require('morgan');
 
-var cors = require('cors');
-
 var indexRouter = require('./routes/index');
 
 var usersRouter = require('./routes/users');
 
 var app = express();
-app.use(cors());
+var port = process.env.PORT || 5000;
+app.set('port', port);
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({
@@ -43,5 +42,8 @@ app.use(function (err, req, res, next) {
   res.json({
     error: res.locals.message
   });
+});
+app.listen(port, function () {
+  console.log("Serveur d\xE9marr\xE9 et \xE9coutant sur le port ".concat(port));
 });
 module.exports = app;
