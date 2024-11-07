@@ -1,9 +1,10 @@
 import React from "react";
+import Story from "../../Components/Story/Story";
 
 function InnondationMaison() {
   return (
     <>
-        <h1>Innondation Maison</h1>
+      <Story theme="inondation" />
     </>
   );
 }
