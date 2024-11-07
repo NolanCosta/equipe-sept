@@ -1,69 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 body.modal-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .container-header {
-    padding: 20px 70px;
-    display: flex;
-    align-items: center;
-    background: #000000;
+  padding: 20px 70px;
+  display: flex;
+  align-items: center;
+  background: #777f67;
 }
 
 nav {
-    position: fixed;
-    height: 78px;
-    left: 0;
-    top: 0;
-    float: left;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  height: 78px;
+  left: 0;
+  top: 0;
+  float: left;
+  width: 100%;
+  z-index: 1000;
 }
 
 header a:hover {
-    color: #000000;
-    text-decoration-line: none !important;
+  color: #000000;
+  text-decoration-line: none !important;
 }
 
 header button:focus,
 header button:focus-visible,
 header button:hover {
-    outline: 1px solid transparent;
-    border: 1px solid transparent;
+  outline: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 @media (max-width: 768px) {
-    nav {
-        height: 100px;
-    }
-    .container-header {
-        padding: 20px 20px;
-    }
-    .logo-header {
-        width: 190px !important;
-    }
-    .menu-burger img {
-        width: 32px;
-    }
+  nav {
+    height: 100px;
+  }
+  .container-header {
+    padding: 20px 20px;
+  }
+  .logo-header {
+    width: 190px !important;
+  }
+  .menu-burger img {
+    width: 32px;
+  }
 }
-
 
 /* BETWEEN 768px and 1024px */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .logo-header {
-        width: 120px !important;
-    }
+  .logo-header {
+    width: 120px !important;
+  }
 }
 
 @media (max-width: 1024px) {
-    /* .container-header {
+  /* .container-header {
       padding: 0 40px;
     } */
-    .logo-header {
-        width: 290px;
-    }
-    .menu-burger img {
-        width: 40px;
-    }
+  .logo-header {
+    width: 290px;
+  }
+  .menu-burger img {
+    width: 40px;
+  }
 }

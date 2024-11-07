@@ -1,0 +1,8 @@
+.card-story {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-story:hover {
+  transform: scale(1.05) rotate(3deg);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
