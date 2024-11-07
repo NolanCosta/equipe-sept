@@ -6,14 +6,11 @@ import ProgressBar from "../../Components/ProgressBar/ProgressBar";
 function Home() {
   return (
     <>
-      <main className="w-full h-[calc(100vh-78px-4rem)]">
-        <ProgressBar />
-        <div className="w-full h-full flex flex-row justify-between items-center">
-          <CardTheme title="Tsunami" />
-          <CardTheme title="Tremblement de terre" />
-          <CardTheme title="Innondation" />
-        </div>
-      </main>
+      <div className="w-full h-[calc(100vh-78px-4rem)] flex flex-row justify-between items-center">
+        <CardTheme title="Tsunami" />
+        <CardTheme title="Séisme" />
+        <CardTheme title="Innondation" />
+      </div>
     </>
   );
 }
