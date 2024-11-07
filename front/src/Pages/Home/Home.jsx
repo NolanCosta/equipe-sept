@@ -1,7 +1,6 @@
 import React from "react";
 import "./home.css";
 import CardTheme from "../../Components/Cards/CardTheme";
-import ProgressBar from "../../Components/ProgressBar/ProgressBar";
 
 function Home() {
   return (
