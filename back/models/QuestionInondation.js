@@ -4,7 +4,7 @@ const questions = [
     {
         id: 1,
         image: "https://media.discordapp.net/attachments/1303701971294883866/1304065629942321203/story-inon1.webp?ex=672e0942&is=672cb7c2&hm=79f03e67d7bb42a535cb5b85129270432cd8a9c1103af68df17bc9b0ff44e651&=&format=webp&width=538&height=538",
-        text: "Inondations"
+        text: "Inondations."
     },
     {
         id: 2,
@@ -35,9 +35,26 @@ const questions = [
     {
         id: 6,
         image: "https://media.discordapp.net/attachments/1303701971294883866/1304065631464718347/story-inon4.webp?ex=672e0942&is=672cb7c2&hm=41af7bfec563b927f71d6283b81bf933546b5c08d771270e173256c57d04ef67&=&format=webp&width=538&height=538",
-        question: "Dehors la situation s’empire. Quel choix faire ?",
-        choices: ["Nourriture/eau, lampe à pile, vêtement chaud, etc...", "GameBoy, skateboard, trousse d'école, ect ..."],
-        answer: "Nourriture/eau, lampe à pile, vêtement chaud, etc..."
+        question: "On commence à s’ennuyer ici et si nous allions récupérer des jeux dans le garage?",
+        choices: ["Allons-y!", "Non surtout pas jouons au cartes."],
+        answer: "Non surtout pas jouons au cartes."
+    },
+    {
+        id: 7,
+        image: "https://media.discordapp.net/attachments/1303701971294883866/1304065631464718347/story-inon4.webp?ex=672e0942&is=672cb7c2&hm=41af7bfec563b927f71d6283b81bf933546b5c08d771270e173256c57d04ef67&=&format=webp&width=538&height=538",
+        question: "Le temps passe vite en s’amusant, cependant on peut peut-etre partir maintenant?",
+        choices: ["Non surtout pas il faut attendre la fin de l’alerte ou les secours!", "Oui, on peut sortir maintenant."],
+        answer: "Non surtout pas il faut attendre la fin de l’alerte ou les secours!"
+    },
+    {
+        id: 8,
+        image: "https://media.discordapp.net/attachments/1303701971294883866/1304065632043663400/story-inon5.webp?ex=672e0943&is=672cb7c3&hm=c148e31af3fdeb3878c7b17f9d598c8f94077049b9dd1293545c119b2a8ebdb4&=&format=webp&width=538&height=538",
+        text: "La fin de la tempête, la météo se calme."
+    },
+    {
+        id: 9,
+        image: "https://media.discordapp.net/attachments/1303701971294883866/1304065632043663400/story-inon5.webp?ex=672e0943&is=672cb7c3&hm=c148e31af3fdeb3878c7b17f9d598c8f94077049b9dd1293545c119b2a8ebdb4&=&format=webp&width=538&height=538",
+        text: "Les pompiers s’assurent que nous allons bien."
     },
 ];
 
