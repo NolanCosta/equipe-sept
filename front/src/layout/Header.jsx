@@ -30,30 +30,19 @@ export default function Header() {
     },
     {
         id: "02",
-        label: 'La video du Hackathon',
-        href: '/#video'
+        label: 'Tsunami',
+        href: '/tsunami'
     },
     {
         id: "03",
-        label: 'Les vainqueurs du Hackathon',
-        href: '/#winners'
+        label: 'Seisme',
+        href: '/tremblement'
     },
     {
-        id: isEventFinished ? "04" : "03",
-        label: 'Les sujets abordés',
-        href: '/#subjects'
-    },
-    {
-        id: isEventFinished ? "05" : "04",
-        label: 'Réalisations',
-        href: '/#teams'
-    },
-    {
-        id: isEventFinished ? "06" : "05",
-        label: 'À propos',
-        href: '/#about'
+        id: "04",
+        label: 'Innondation',
+        href: '/innondation'
     }
-
 ]
 
   const menuItemsWithoutWinners = menuItems.filter(
