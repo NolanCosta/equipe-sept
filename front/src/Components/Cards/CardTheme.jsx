@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import LogoTsunami from "../../assets/images/tsunami/Tsunami1.webp";
 import "./cardTheme.css";
 
-function CardTheme({ title }) {
+function CardTheme({ title, onClick }) {
   const [backgroundImage, setBackgroundImage] = useState("");
 
   const getImage = () => {
@@ -35,6 +35,7 @@ function CardTheme({ title }) {
           style={{
             backgroundImage: `url(${backgroundImage})`,
           }}
+          onClick={onClick}
         ></div>
       </div>
     </>
