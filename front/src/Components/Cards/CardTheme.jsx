@@ -2,18 +2,18 @@ import React, { useEffect, useState } from "react";
 import LogoTsunami from "../../assets/images/tsunami/Tsunami1.webp";
 import "./cardTheme.css";
 
-function CardTheme({ title, onClick }) {
+function CardTheme({ title, name, onClick }) {
   const [backgroundImage, setBackgroundImage] = useState("");
 
   const getImage = () => {
-    switch (title) {
-      case "Tsunami":
+    switch (name) {
+      case "tsu":
         setBackgroundImage(LogoTsunami);
         break;
-      case "Séisme":
+      case "tdt":
         setBackgroundImage(LogoTsunami);
         break;
-      case "Innondation":
+      case "innon":
         setBackgroundImage(LogoTsunami);
         break;
       default:
