@@ -25,7 +25,7 @@ function CardTheme({ title, name, onClick }) {
         break;
       case "ext":
         setBackgroundImage(LogoExterieur);
-        break;    
+        break;
       default:
         setBackgroundImage("");
         break;
@@ -38,7 +38,7 @@ function CardTheme({ title, name, onClick }) {
 
   return (
     <>
-      <div className="w-[30%] h-[45%] flex flex-col gap-3 text-[#B1B18D]">
+      <div className="w-[500px] h-[45%] flex flex-col gap-3 text-[#B1B18D]">
         <h1>{title}</h1>
         <div
           className="w-full h-full bg-cover bg-center rounded-xl cursor-pointer card-story"
