@@ -4,6 +4,7 @@ const questionSeisme = [
   {
     id: 1,
     image: "https://media.discordapp.net/attachments/1303701971294883866/1304081074510626918/story-seisme1.webp?ex=672ec064&is=672d6ee4&hm=5d1a83229eb584a2d06458dabf5902fe0cb39d8c01490420bb060e99e5d425c7&=&format=webp&width=590&height=590",
+
     text: "Séisme.",
   },
   {

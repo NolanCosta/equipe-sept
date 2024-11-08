@@ -1,14 +1,27 @@
 import React, { useEffect, useState } from "react";
+import ProgressBar from "../ProgressBar/ProgressBar";
 
 function Story({ theme }) {
   const [story, setStory] = useState(null);
   const [advencement, setAdvencement] = useState(1);
-  console.log(story);
+
+  const getRequest = () => {
+    if (theme === "inondation") {
+      return "http://localhost:5000/api/inondation";
+    } else if (theme === "seisme") {
+      return "http://localhost:5000/api/seisme";
+    } else if (theme === "tsunami") {
+      return "http://localhost:5000/api/tsunami";
+    }
+  };
 
   const getStory = async () => {
+    console.log(getRequest());
+
     try {
-      const response = await fetch(`http://localhost:5000/api/inondation`);
+      const response = await fetch(getRequest());
       const data = await response.json();
+      console.log(data);
       setStory(data);
     } catch (error) {
       console.error(error);
@@ -16,11 +29,7 @@ function Story({ theme }) {
   };
 
   const checkAnswer = (answer) => {
-    console.log(answer);
-    console.log(story[advencement - 1].answer);
     if (answer === story[advencement - 1].answer) {
-      console.log("good answer");
-
       setAdvencement(advencement + 1);
     }
   };
@@ -29,27 +38,39 @@ function Story({ theme }) {
     return story.map((question) => {
       if (question.id === advencement) {
         return (
-          <div key={question.id}>
-            <h1>{question.text}</h1>
-            <img src={question.image} alt="question image" />
+          <div
+            key={question.id}
+            className="h-[calc(100vh-78px-4rem)] flex flex-col justify-between items-center"
+          >
+            <ProgressBar size={story.length} advencement={advencement} />
+            <h1 className="h-1/6 flex items-center text-black">
+              {question.text}
+            </h1>
+            <img
+              className="w-1/3 h-3/6"
+              src={question.image}
+              alt="question image"
+            />
             {question.question ? (
-              <div>
-                <p className="text-black">{question.question}</p>
-                {question.choices.map((choice) => {
-                  return (
-                    <button
-                      className="bg-white text-black"
-                      onClick={() => {
-                        checkAnswer(choice);
-                      }}
-                    >
-                      {choice}
-                    </button>
-                  );
-                })}
+              <div className="h-1/6 flex flex-col justify-around items-center">
+                <h2 className="text-3xl text-black">{question.question}</h2>
+                <div className="flex flex-row items-center gap-10">
+                  {question.choices.map((choice) => {
+                    return (
+                      <button
+                        className="bg-white text-black"
+                        onClick={() => {
+                          checkAnswer(choice);
+                        }}
+                      >
+                        {choice}
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             ) : (
-              <div>
+              <div className="h-1/6 flex items-center">
                 <button
                   onClick={() => {
                     setAdvencement(advencement + 1);
@@ -69,7 +90,7 @@ function Story({ theme }) {
     getStory();
   }, [theme]);
 
-  return <div>{story && renderQuestion()}</div>;
+  return <>{story && renderQuestion()}</>;
 }
 
 export default Story;

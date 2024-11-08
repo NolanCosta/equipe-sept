@@ -1,8 +1,8 @@
 import React from "react";
 
-function ProgressBar() {
-  const storyCount = 10;
-  const advanceStory = 1;
+function ProgressBar({ size, advencement }) {
+  const storyCount = size;
+  const advanceStory = advencement;
 
   const renderProgressBar = () => {
     const progressBar = [];
