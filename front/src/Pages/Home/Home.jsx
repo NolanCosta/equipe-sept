@@ -11,10 +11,10 @@ function Home() {
     <>
     <div className="title" >
           <h1>Alert 4 Sud</h1>
-    <p><br/>Plonge dans des aventures captivantes et découvre, <br/>
+    <h4><br/>Plonge dans des aventures captivantes et découvre, <br/>
     en famille, comment réagir face aux catastrophes naturelles ! <br/>
     Avec nos histoires interactives adaptés aux 6-11 ans, <br/>
-    apprendre devient un jeu où chaque choix compte !<br/></p>
+    apprendre devient un jeu où chaque choix compte !<br/></h4>
     </div>
 
       <div className="w-full h-[calc(100vh-78px-4rem)] flex flex-row justify-between items-center">

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import LogoTsunami from "../../assets/images/tsunami/Tsunami1.webp";
+import LogoInondation from "../../assets/images/tsunami/Inondations_2.webp";
+import LogoSeisme from "../../assets/images/tsunami/earthquake_2.webp";
 import "./cardTheme.css";
 
 function CardTheme({ title, name, onClick }) {
@@ -11,10 +13,10 @@ function CardTheme({ title, name, onClick }) {
         setBackgroundImage(LogoTsunami);
         break;
       case "tdt":
-        setBackgroundImage(LogoTsunami);
+        setBackgroundImage(LogoSeisme);
         break;
       case "innon":
-        setBackgroundImage(LogoTsunami);
+        setBackgroundImage(LogoInondation);
         break;
       default:
         setBackgroundImage("");
