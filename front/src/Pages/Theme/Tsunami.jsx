@@ -9,8 +9,8 @@ function Tsunami() {
   return (
     <>
       <div className="pt-20">
-        <h1 className="text-[#B1B18D]">Tsunami</h1>
-        <p className = "text-2xl text-black"> Un tsunami est une énorme vague de mer très puissante qui se forme après un tremblement de terre sous l'eau et qui peut inonder les plages et les villes.</p>
+        <h1 className="text-[#b1b18d]">Tsunami</h1>
+        <p className = "text-2xl text-[#b1b18d]">Un tsunami, c'est d'immenses vagues qui se forment après un tremblement de terre sous l'eau<br/> et qui peuvent inonder les plages et les villes. Les vagues d'un tsunami peuvent être d'une hauteur de 60 mètres ou plus,<br/> soit la hauteur d'un bâtiment de dix étages.</p>
         <div className="w-full h-[calc(100vh-78px-4rem)] flex flex-row justify-around items-center">
           <CardTheme title="MAISON" onClick={() => navigate("/tsunami/maison")} />
           <CardTheme title="EXTÉRIEUR" onClick={() => navigate("/tsunami/exterieur")} />
