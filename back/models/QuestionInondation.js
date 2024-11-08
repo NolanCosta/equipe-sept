@@ -47,7 +47,7 @@ const questions = [
   {
     id: 6,
     image:
-      "https://media.discordapp.net/attachments/1303701971294883866/1304065631464718347/story-inon4.webp?ex=672e0942&is=672cb7c2&hm=41af7bfec563b927f71d6283b81bf933546b5c08d771270e173256c57d04ef67&=&format=webp&width=538&height=538",
+      "https://media.discordapp.net/attachments/1303701971294883866/1304065632618418230/story-inon6.webp?ex=672eb203&is=672d6083&hm=b0dc88dbf6cad5a355d9ae1483426d2b3839cd0237dce472ec5c85ace98b949a&=&format=webp&width=681&height=681",
     question:
       "On commence à s’ennuyer ici et si nous allions récupérer des jeux dans le garage?",
     choices: ["Allons-y!", "Non surtout pas jouons au cartes."],
@@ -56,7 +56,7 @@ const questions = [
   {
     id: 7,
     image:
-      "https://media.discordapp.net/attachments/1303701971294883866/1304065631464718347/story-inon4.webp?ex=672e0942&is=672cb7c2&hm=41af7bfec563b927f71d6283b81bf933546b5c08d771270e173256c57d04ef67&=&format=webp&width=538&height=538",
+      "https://media.discordapp.net/attachments/1303701971294883866/1304065633192902707/story-inon7.webp?ex=672eb203&is=672d6083&hm=37892f6883c5748203510775e2c71d3914dc23160024179f423a869356ddc76e&=&format=webp&width=681&height=681",
     question:
       "Le temps passe vite en s’amusant, cependant on peut peut-etre partir maintenant?",
     choices: [
@@ -69,13 +69,13 @@ const questions = [
   {
     id: 8,
     image:
-      "https://media.discordapp.net/attachments/1303701971294883866/1304065632043663400/story-inon5.webp?ex=672e0943&is=672cb7c3&hm=c148e31af3fdeb3878c7b17f9d598c8f94077049b9dd1293545c119b2a8ebdb4&=&format=webp&width=538&height=538",
+      "https://media.discordapp.net/attachments/1303701971294883866/1304065633704742975/story-inon8.webp?ex=672eb203&is=672d6083&hm=2e5495d582d2eb119508de275bbde4c91718c78bcd9f10aab4b71dcd7d25286a&=&format=webp&width=681&height=681",
     text: "La fin de la tempête, la météo se calme.",
   },
   {
     id: 9,
     image:
-      "https://media.discordapp.net/attachments/1303701971294883866/1304065632043663400/story-inon5.webp?ex=672e0943&is=672cb7c3&hm=c148e31af3fdeb3878c7b17f9d598c8f94077049b9dd1293545c119b2a8ebdb4&=&format=webp&width=538&height=538",
+      "https://media.discordapp.net/attachments/1303701971294883866/1304065634740736071/story-inon9v2.webp?ex=672eb203&is=672d6083&hm=90feaf0c423e1a2350d76e9afbfc9c3d965c4266b9fc25c6cc5c976447a546b5&=&format=webp&width=681&height=681",
     text: "Les pompiers s’assurent que nous allons bien.",
   },
 ];
