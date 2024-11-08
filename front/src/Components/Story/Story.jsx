@@ -5,10 +5,23 @@ function Story({ theme }) {
   const [story, setStory] = useState(null);
   const [advencement, setAdvencement] = useState(1);
 
+  const getRequest = () => {
+    if (theme === "inondation") {
+      return "http://localhost:5000/api/inondation";
+    } else if (theme === "seisme") {
+      return "http://localhost:5000/api/seisme";
+    } else if (theme === "tsunami") {
+      return "http://localhost:5000/api/tsunami";
+    }
+  };
+
   const getStory = async () => {
+    console.log(getRequest());
+
     try {
-      const response = await fetch(`http://localhost:5000/api/inondation`);
+      const response = await fetch(getRequest());
       const data = await response.json();
+      console.log(data);
       setStory(data);
     } catch (error) {
       console.error(error);
@@ -34,7 +47,7 @@ function Story({ theme }) {
               {question.text}
             </h1>
             <img
-              className="w-1/2 h-3/6"
+              className="w-1/3 h-3/6"
               src={question.image}
               alt="question image"
             />
