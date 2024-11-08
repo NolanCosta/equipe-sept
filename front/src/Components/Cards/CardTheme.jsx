@@ -5,6 +5,8 @@ import LogoSeisme from "../../assets/images/tsunami/earthquake_2.webp";
 import LogoMaison from "../../assets/images/maison.webp";
 import LogoExterieur from "../../assets/images/parc.webp";
 import LogoBag from "../../assets/images/bag.webp";
+import LogoSNA from "../../assets/images/sirene_SNA.webp";
+import LogoRisk from "../../assets/images/risk.webp";
 import "./cardTheme.css";
 
 function CardTheme({ title, name, onClick }) {
@@ -29,6 +31,12 @@ function CardTheme({ title, name, onClick }) {
         break;
       case "bag":
         setBackgroundImage(LogoBag);
+        break;
+      case "sna":
+        setBackgroundImage(LogoSNA);
+        break;
+      case "risk":
+        setBackgroundImage(LogoRisk);
         break;
       default:
         setBackgroundImage("");
