@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import LogoTsunami from "../../assets/images/tsunami/Tsunami1.webp";
 import LogoInondation from "../../assets/images/tsunami/Inondations_2.webp";
 import LogoSeisme from "../../assets/images/tsunami/earthquake_2.webp";
+import LogoMaison from "../../assets/images/maison.webp";
+import LogoExterieur from "../../assets/images/parc.webp";
 import "./cardTheme.css";
 
 function CardTheme({ title, name, onClick }) {
@@ -18,6 +20,12 @@ function CardTheme({ title, name, onClick }) {
       case "innon":
         setBackgroundImage(LogoInondation);
         break;
+      case "maison":
+        setBackgroundImage(LogoMaison);
+        break;
+      case "ext":
+        setBackgroundImage(LogoExterieur);
+        break;    
       default:
         setBackgroundImage("");
         break;
